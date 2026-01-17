@@ -8,6 +8,10 @@
       <string>Treino-jenkins/main</string>
       <ranges>3,5</ranges>
     </entry>
+    <entry>
+      <string>Treino-jenkins/dev</string>
+      <ranges>1</ranges>
+    </entry>
   </usages>
   <facets/>
 </fingerprint>

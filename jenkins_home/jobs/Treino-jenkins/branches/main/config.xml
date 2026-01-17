@@ -24,7 +24,6 @@
               <name>origin</name>
               <refspec>+refs/heads/main:refs/remotes/origin/main</refspec>
               <url>https://github.com/italo12346/sample-jenkins-ci.git</url>
-              <credentialsId>daebb93c-b7f7-4a3a-97f5-1a6bd558caf9</credentialsId>
             </hudson.plugins.git.UserRemoteConfig>
           </userRemoteConfigs>
           <branches class="singleton-list">

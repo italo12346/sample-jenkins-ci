@@ -5,12 +5,13 @@ Accept: application/vnd.github+json
 Accept-Encoding: gzip
 HTTP/1.1 200 
 26
+content-length: 8371
+content-type: application/json; charset=utf-8
+x-github-media-type: github.v3; format=json
 access-control-allow-origin: *
 access-control-expose-headers: ETag, Link, Location, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Used, X-RateLimit-Resource, X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval, X-GitHub-Media-Type, X-GitHub-SSO, X-GitHub-Request-Id, Deprecation, Sunset
 cache-control: public, max-age=60, s-maxage=60
-content-length: 8371
 content-security-policy: default-src 'none'
-content-type: application/json; charset=utf-8
 etag: "1b5bf5c78e7ab83e32a681a9ef2dc19ea602fbce"
 last-modified: Sat, 17 Jan 2026 00:19:14 GMT
 referrer-policy: origin-when-cross-origin, strict-origin-when-cross-origin
@@ -18,19 +19,18 @@ vary: Accept,Accept-Encoding, Accept, X-Requested-With
 x-content-type-options: nosniff
 x-frame-options: deny
 x-github-api-version-selected: 2022-11-28
-x-github-media-type: github.v3; format=json
 x-internal-experiment-version-metadata: ZW1wdHlfcmVwb3NpdG9yeTpmYWxzZSxoZWFkX29pZDpiNDMyYTZiNTUzNGZlMjVmZDBhZjgxZGExYTJlODE3NmEyMjdjZWIxLHJlZl9uYW1lOnJlZnMvaGVhZHMvbWFpbixyZWZfY29tbWl0X29pZDpiNDMyYTZiNTUzNGZlMjVmZDBhZjgxZGExYTJlODE3NmEyMjdjZWIxLHJvb3RfdHJlZV9lbnRyeV9vaWQ6MWI1YmY1Yzc4ZTdhYjgzZTMyYTY4MWE5ZWYyZGMxOWVhNjAyZmJjZSxwYXRoX29iamVjdF90eXBlOnRyZWUscGF0aF9vYmplY3Rfb2lkOjFiNWJmNWM3OGU3YWI4M2UzMmE2ODFhOWVmMmRjMTllYTYwMmZiY2UscGF0aF9vYmplY3RfbW9kZToscGF0aF9vYmplY3Rfc2l6ZTo=
 x-xss-protection: 0
-date: Sat, 17 Jan 2026 00:36:40 GMT
+date: Sat, 17 Jan 2026 00:49:04 GMT
 server: github.com
 x-ratelimit-limit: 60
-x-ratelimit-remaining: 47
+x-ratelimit-remaining: 41
 x-ratelimit-reset: 1768613104
-x-ratelimit-used: 13
+x-ratelimit-used: 19
 x-ratelimit-resource: core
-x-github-request-id: F9DF:167A89:BB1F0B:D0EA65:696AD998
-OkHttp-Sent-Millis: 1768610199264
-OkHttp-Received-Millis: 1768610199575
+x-github-request-id: FB04:37E07E:BA36C7:D0439F:696ADC80
+OkHttp-Sent-Millis: 1768610943448
+OkHttp-Received-Millis: 1768610943749
 
 TLS_AES_128_GCM_SHA256
 3
