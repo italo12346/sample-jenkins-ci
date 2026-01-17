@@ -1,0 +1,27 @@
+Started by user [8mha:////4PC/VDTSI/RyREKc5woG790iPZWzEv+NgfKkZXA5jm8AAAAAnB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzhEgYB/dLi1CL9zJLEnHxDI2MTMwCheVz3xQAAAA==[0mItalo Souza Sampaio
+java.lang.IllegalArgumentException: Illegal base64 character 5f
+	at java.base/java.util.Base64$Decoder.decode0(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at java.base/java.util.Base64$Decoder.decode(Unknown Source)
+	at PluginClassLoader for github-api//org.kohsuke.github.extras.authorization.JWTTokenProvider.getPrivateKeyFromString(JWTTokenProvider.java:152)
+Caused: java.security.spec.InvalidKeySpecException: Failed to decode private key: Illegal base64 character 5f
+	at PluginClassLoader for github-api//org.kohsuke.github.extras.authorization.JWTTokenProvider.getPrivateKeyFromString(JWTTokenProvider.java:157)
+	at PluginClassLoader for github-api//org.kohsuke.github.extras.authorization.JWTTokenProvider.<init>(JWTTokenProvider.java:85)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubAppCredentials.createJwtProvider(GitHubAppCredentials.java:219)
+Caused: java.lang.IllegalArgumentException: Couldn't parse private key for GitHub app, make sure it's PKCS#8 format
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubAppCredentials.createJwtProvider(GitHubAppCredentials.java:221)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubAppCredentials$TokenProvider.<init>(GitHubAppCredentials.java:229)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubAppCredentials$CredentialsTokenProvider.<init>(GitHubAppCredentials.java:260)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubAppCredentials.getAuthorizationProvider(GitHubAppCredentials.java:214)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.Connector.lambda$connect$0(Connector.java:420)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.Connector$GitHubConnection.lambda$lookup$0(Connector.java:681)
+	at java.base/java.util.concurrent.ConcurrentHashMap.compute(Unknown Source)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.Connector$GitHubConnection.lookup(Connector.java:679)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.Connector.connect(Connector.java:413)
+	at PluginClassLoader for github-branch-source//org.jenkinsci.plugins.github_branch_source.GitHubSCMSource.retrieve(GitHubSCMSource.java:1658)
+	at PluginClassLoader for scm-api//jenkins.scm.api.SCMSource.fetch(SCMSource.java:577)
+	at PluginClassLoader for workflow-multibranch//org.jenkinsci.plugins.workflow.multibranch.SCMBinder.create(SCMBinder.java:104)
+	at PluginClassLoader for workflow-job//org.jenkinsci.plugins.workflow.job.WorkflowRun.run(WorkflowRun.java:317)
+	at hudson.model.ResourceController.execute(ResourceController.java:101)
+	at hudson.model.Executor.run(Executor.java:460)
+Finished: FAILURE

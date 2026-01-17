@@ -12,10 +12,10 @@
       </causeBag>
     </hudson.model.CauseAction>
     <jenkins.metrics.impl.TimeInQueueAction plugin="metrics@4.2.37-494.v06f9a_939d33a_">
-      <queuingDurationMillis>8</queuingDurationMillis>
+      <queuingDurationMillis>148</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
       <buildableDurationMillis>0</buildableDurationMillis>
-      <waitingDurationMillis>1</waitingDurationMillis>
+      <waitingDurationMillis>25</waitingDurationMillis>
     </jenkins.metrics.impl.TimeInQueueAction>
     <jenkins.scm.api.SCMRevisionAction plugin="scm-api@724.v7d839074eb_5c">
       <sourceId>1</sourceId>
@@ -23,14 +23,14 @@
         <head class="org.jenkinsci.plugins.github_branch_source.BranchSCMHead" plugin="github-branch-source@1917.v9ee8a_39b_3d0d">
           <name>main</name>
         </head>
-        <hash>b432a6b5534fe25fd0af81da1a2e8176a227ceb1</hash>
+        <hash>e9d8064de37828dd4d9a445fcfec3862a69aca44</hash>
       </revision>
     </jenkins.scm.api.SCMRevisionAction>
     <org.jenkinsci.plugins.workflow.libs.LibrariesAction plugin="pipeline-groovy-lib@787.ve2fef0efdca_6">
       <libraries/>
     </org.jenkinsci.plugins.workflow.libs.LibrariesAction>
     <org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction plugin="pipeline-model-definition@2.2277.v00573e73ddf1">
-      <stagesUUID>d76549b7-1364-4080-a2a7-6ee8d70cbdef</stagesUUID>
+      <stagesUUID>29718de0-ed07-4b70-a0dd-0159a20913c4</stagesUUID>
       <pipelineDefs>
         <org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef plugin="pipeline-model-api@2.2277.v00573e73ddf1">
           <stages>
@@ -221,7 +221,7 @@
                 </branches>
               </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTStage>
             </stages>
-            <uuid>d76549b7-1364-4080-a2a7-6ee8d70cbdef</uuid>
+            <uuid>29718de0-ed07-4b70-a0dd-0159a20913c4</uuid>
           </stages>
           <postBuild>
             <conditions>
@@ -270,16 +270,13 @@
         </org.jenkinsci.plugins.pipeline.modeldefinition.ast.ModelASTPipelineDef>
       </pipelineDefs>
     </org.jenkinsci.plugins.pipeline.modeldefinition.actions.ExecutionModelAction>
-    <com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder plugin="credentials@1480.v2246fd131e83">
-      <boundCredentials class="concurrent-hash-map"/>
-    </com.cloudbees.plugins.credentials.builds.CredentialsParameterBinder>
     <hudson.plugins.git.util.BuildData plugin="git@5.8.1">
       <buildsByBranchName>
         <entry>
           <string>main</string>
           <hudson.plugins.git.util.Build>
             <marked plugin="git-client@6.5.0">
-              <sha1>b432a6b5534fe25fd0af81da1a2e8176a227ceb1</sha1>
+              <sha1>e9d8064de37828dd4d9a445fcfec3862a69aca44</sha1>
               <branches class="singleton-set">
                 <hudson.plugins.git.Branch>
                   <sha1 reference="../../../sha1"/>
@@ -288,7 +285,7 @@
               </branches>
             </marked>
             <revision reference="../marked"/>
-            <hudsonBuildNumber>5</hudsonBuildNumber>
+            <hudsonBuildNumber>10</hudsonBuildNumber>
           </hudson.plugins.git.util.Build>
         </entry>
       </buildsByBranchName>
@@ -309,19 +306,19 @@
       <env class="tree-map"/>
     </org.jenkinsci.plugins.workflow.cps.EnvActionImpl>
     <jenkins.metrics.impl.SubTaskTimeInQueueAction plugin="metrics@4.2.37-494.v06f9a_939d33a_">
-      <queuingDurationMillis>68</queuingDurationMillis>
+      <queuingDurationMillis>125</queuingDurationMillis>
       <blockedDurationMillis>0</blockedDurationMillis>
-      <buildableDurationMillis>63</buildableDurationMillis>
+      <buildableDurationMillis>112</buildableDurationMillis>
       <waitingDurationMillis>2</waitingDurationMillis>
-      <executingDurationMillis>73638</executingDurationMillis>
+      <executingDurationMillis>55969</executingDurationMillis>
       <workUnitCount>1</workUnitCount>
     </jenkins.metrics.impl.SubTaskTimeInQueueAction>
   </actions>
-  <queueId>18</queueId>
-  <timestamp>1768610559903</timestamp>
-  <startTime>1768610560173</startTime>
+  <queueId>44</queueId>
+  <timestamp>1768652886959</timestamp>
+  <startTime>1768652887065</startTime>
   <result>FAILURE</result>
-  <duration>80365</duration>
+  <duration>72056</duration>
   <charset>UTF-8</charset>
   <keepLog>false</keepLog>
   <execution class="org.jenkinsci.plugins.workflow.cps.CpsFlowExecution">
@@ -381,27 +378,27 @@
     <timings class="map">
       <entry>
         <string>flowNode</string>
-        <long>8286488154</long>
+        <long>7522633100</long>
       </entry>
       <entry>
         <string>classLoad</string>
-        <long>409142088</long>
+        <long>9284929835</long>
       </entry>
       <entry>
         <string>runQueue</string>
-        <long>81275064344</long>
+        <long>56815359882</long>
       </entry>
       <entry>
         <string>run</string>
-        <long>42464376167</long>
+        <long>38144474745</long>
       </entry>
       <entry>
         <string>parse</string>
-        <long>451233526</long>
+        <long>4370406909</long>
       </entry>
       <entry>
         <string>saveProgram</string>
-        <long>26869996480</long>
+        <long>19570694278</long>
       </entry>
     </timings>
     <internalCalls class="sorted-set">
@@ -426,7 +423,6 @@
             <name>origin</name>
             <refspec>+refs/heads/main:refs/remotes/origin/main</refspec>
             <url>https://github.com/italo12346/sample-jenkins-ci.git</url>
-            <credentialsId>daebb93c-b7f7-4a3a-97f5-1a6bd558caf9</credentialsId>
           </hudson.plugins.git.UserRemoteConfig>
         </userRemoteConfigs>
         <branches class="singleton-list">
@@ -452,7 +448,7 @@
       </scm>
       <node></node>
       <workspace>/var/jenkins_home/workspace/Treino-jenkins_main</workspace>
-      <changelogFile>/var/jenkins_home/jobs/Treino-jenkins/branches/main/builds/5/changelog7744665070102450895.xml</changelogFile>
+      <changelogFile>/var/jenkins_home/jobs/Treino-jenkins/branches/main/builds/10/changelog11513612745437489851.xml</changelogFile>
       <pollingBaseline class="hudson.scm.SCMRevisionState$None" reference="../../../actions/org.jenkinsci.plugins.workflow.steps.scm.MultiSCMRevisionState/revisionStates/entry/hudson.scm.SCMRevisionState_-None"/>
     </org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
     <org.jenkinsci.plugins.workflow.job.WorkflowRun_-SCMCheckout>
@@ -463,7 +459,6 @@
             <name>origin</name>
             <refspec>+refs/heads/main:refs/remotes/origin/main</refspec>
             <url>https://github.com/italo12346/sample-jenkins-ci.git</url>
-            <credentialsId>daebb93c-b7f7-4a3a-97f5-1a6bd558caf9</credentialsId>
           </hudson.plugins.git.UserRemoteConfig>
         </userRemoteConfigs>
         <branches class="singleton-list">
@@ -483,7 +478,7 @@
           <hudson.plugins.git.extensions.impl.BuildChooserSetting>
             <buildChooser class="jenkins.plugins.git.AbstractGitSCMSource$SpecificRevisionBuildChooser">
               <revision plugin="git-client@6.5.0">
-                <sha1>b432a6b5534fe25fd0af81da1a2e8176a227ceb1</sha1>
+                <sha1>e9d8064de37828dd4d9a445fcfec3862a69aca44</sha1>
                 <branches class="singleton-set">
                   <hudson.plugins.git.Branch>
                     <sha1 reference="../../../sha1"/>
