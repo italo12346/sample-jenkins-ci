@@ -1,0 +1,4 @@
+Treino-jenkins/dev
+Treino-jenkins_dev
+Treino-jenkins/main
+Treino-jenkins_main

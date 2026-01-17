@@ -30,9 +30,7 @@
       <providerId>default</providerId>
     </org.jenkinsci.plugins.displayurlapi.user.PreferredProviderUserProperty>
     <hudson.model.PaneStatusProperties>
-      <collapsed>
-        <string>executors</string>
-      </collapsed>
+      <collapsed/>
     </hudson.model.PaneStatusProperties>
     <jenkins.security.seed.UserSeedProperty>
       <seed>e527c97bbec0c4f4</seed>
